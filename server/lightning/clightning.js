@@ -56,7 +56,8 @@ module.exports = function (lightningPath) {
                 n.addresses.forEach((a) => {
                     addresses.push({
                         network: '',
-                        addr: a.address
+                        addr: a.address,
+                        port: a.port,
                     });
                 });
             }

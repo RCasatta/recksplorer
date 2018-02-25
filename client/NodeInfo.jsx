@@ -7,7 +7,7 @@ export default class NodeInfo extends React.Component {
 
         var uri = 'unknown';
         if (node.addresses.length)
-            uri = node.pub_key + '@' + node.addresses[0].addr;
+            uri = node.pub_key + '@' + node.addresses[0].addr + ':' + node.addresses[0].port;
 
         return (
             <tbody>
